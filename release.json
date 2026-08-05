@@ -1,15 +1,12 @@
 {
   "schemaVersion": 1,
-  "project": {
-    "name": "UpdateTest"
-  },
-  "release": {
-    "version": "0.1.6",
-    "tag": "v0.1.6"
-  },
-  "build": {
-    "port": 0
-  },
+  "project": "UpdateTest",
+  "version": "0.1.6",
+  "githubSource": "v0.1.6",
+  "zipPrefix": "UpdateTest-",
+  "port": 0,
+  "packageChanges": false,
+  "commit": "Release UpdateTest v0.1.6",
   "i18n": {
     "enabled": false,
     "folder": "src/i18n",
