@@ -1,6 +1,6 @@
 {
-  "version": "0.1.4",
-  "tag": "v0.1.4",
+  "version": "0.1.5",
+  "tag": "v0.1.5",
   "commit": "",
   "builtUtc": "",
   "notes": "Build information will be completed by ProjectUpdate.ps1."

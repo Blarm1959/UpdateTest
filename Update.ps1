@@ -1,2 +1,2 @@
-$Tool = Join-Path $PSScriptRoot "..\PowerShellTools\Project\Update\ProjectUpdate.ps1"
-& $Tool
+& "$PSScriptRoot\..\PowerShellTools\Project\Update\ProjectUpdate.ps1" -ProjectRoot $PSScriptRoot
+exit $LASTEXITCODE
