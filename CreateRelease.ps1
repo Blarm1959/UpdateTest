@@ -20,4 +20,4 @@ This script will eventually:
  - Create UpdateTest-vX.Y.Z.zip
 #>
 
-Write-Host "CreateVer.ps1 has not yet been implemented."
+Write-Host "CreateRelease.ps1 has not yet been implemented."
