@@ -1,4 +1,18 @@
-[CmdletBinding()]
+<#
+.SYNOPSIS
+    Project Release Creator
+
+.DESCRIPTION
+    Thin wrapper around the generic
+    ProjectCreateRelease.ps1 tool.
+
+    All release creation logic resides in the generic tool.
+
+.NOTES
+    This file should remain intentionally small.
+#>
+
+[CmdletBinding(SupportsShouldProcess = $false)]
 param
 (
     [switch]$Minor,
@@ -18,11 +32,20 @@ param
     [switch]$Force
 )
 
-$Tool = Join-Path `
-    $PSScriptRoot `
-    "..\PowerShellTools\Project\Release\ProjectCreateRelease.ps1"
+$ToolPath = Join-Path `
+    -Path $PSScriptRoot `
+    -ChildPath "..\PowerShellTools\Project\Release\ProjectCreateRelease.ps1"
 
-& $Tool `
+if (-not (Test-Path -LiteralPath $ToolPath -PathType Leaf))
+{
+    Write-Host ""
+    Write-Host "[FAIL] ProjectCreateRelease.ps1 not found." -ForegroundColor Red
+    Write-Host "       Expected:"
+    Write-Host "       $ToolPath"
+    exit 1
+}
+
+& $ToolPath `
     -ProjectFolder $PSScriptRoot `
     -Minor:$Minor `
     -Major:$Major `
@@ -32,3 +55,5 @@ $Tool = Join-Path `
     -Output $Output `
     -DryRun:$DryRun `
     -Force:$Force
+
+exit $LASTEXITCODE
