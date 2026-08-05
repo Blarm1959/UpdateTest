@@ -4,8 +4,8 @@
     "name": "UpdateTest"
   },
   "release": {
-    "version": "0.1.5",
-    "tag": "v0.1.5"
+    "version": "0.1.6",
+    "tag": "v0.1.6"
   },
   "build": {
     "port": 0
