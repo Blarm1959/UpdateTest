@@ -1,4 +1,4 @@
-# UpdateTest
+﻿# UpdateTest
 
 Regression test project for **Blarm Generic Project Updater**.
 
@@ -11,14 +11,14 @@ Nothing in this project exists unless it tests some aspect of the updater.
 
 ## Current Release
 
-Version: **v0.1.0**
+Version: **v0.1.1**
 
-Created manually.
-
+Created by CreateRelease.ps1.
 ---
 
 ## Release History
 
 | Version | Type | Notes |
 |---------|------|-------|
+| v0.1.1 | Patch | Generated for updater regression testing. |
 | v0.1.0 | Initial | Initial project created. |
