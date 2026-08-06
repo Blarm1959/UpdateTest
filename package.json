@@ -1,6 +1,6 @@
 {
   "name": "updatetest",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "private": true,
   "description": "Regression test project for ProjectUpdate.ps1",
   "scripts": {

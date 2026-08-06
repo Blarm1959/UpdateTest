@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "project": "UpdateTest",
-  "version": "0.1.7",
-  "githubSource": "v0.1.7",
+  "version": "0.1.8",
+  "githubSource": "v0.1.8",
   "zipPrefix": "UpdateTest-",
   "port": 0,
   "packageChanges": false,
